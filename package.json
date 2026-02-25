@@ -1,0 +1,24 @@
+{
+    "name": "secureshield-fullstack",
+    "version": "1.0.0",
+    "description": "SecureShield Advanced Malware Detection System",
+    "main": "server/index.js",
+    "scripts": {
+        "start": "node server/index.js",
+        "install-server": "cd server && npm install",
+        "install-client": "cd client && npm install",
+        "build-client": "cd client && npm run build",
+        "postinstall": "npm run install-server && npm run install-client && npm run build-client"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
